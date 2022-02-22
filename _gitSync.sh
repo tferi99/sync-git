@@ -24,6 +24,7 @@ PUSHED=0
 
 commit() {
 	echo "### commit ###"
+	git add -A
 	git commit -am "auto push" --allow-empty
 	RET=$?
 	if [ $RET -ne 0 ]
