@@ -1,5 +1,5 @@
 CURRENT_PROJECTS=.current_projects
-COMMIT_MSG=auto push
+COMMIT_MSG="auto push"
 
 if [ -$# -eq 1 ]
 then
@@ -10,7 +10,7 @@ fi
 commit() {
 	echo "### commit ###"
 	git add -A 
-	git commit -am $COMMIT_MSG --allow-empty
+	git commit -am "$COMMIT_MSG" --allow-empty
 	RET=$?
 	if [ $RET -ne 0 ]
 	then
