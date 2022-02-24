@@ -1,9 +1,10 @@
 CURRENT_PROJECTS=.current_projects
 COMMIT_MSG="auto push"
 
-if [ -$# -eq 1 ]
+if [ $# -eq 1 ]
 then
 	COMMIT_MSG=$1
+	echo "CUSTOM MESSAGE: $COMMIT_MSG"
 fi
 
 
