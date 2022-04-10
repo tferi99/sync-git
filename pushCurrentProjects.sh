@@ -1,5 +1,5 @@
 CURRENT_PROJECTS=.current_projects
-COMMIT_MSG="auto push"
+COMMIT_MSG="auto push by sync-git scripts"
 
 if [ $# -eq 1 ]
 then
